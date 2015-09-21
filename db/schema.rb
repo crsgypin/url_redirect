@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150920032408) do
+ActiveRecord::Schema.define(version: 20150921013615) do
 
   create_table "links", force: :cascade do |t|
     t.string   "in_url"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150920032408) do
     t.integer  "http_status", default: 301
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.integer  "times"
   end
 
   add_index "links", ["in_url"], name: "index_links_on_in_url"

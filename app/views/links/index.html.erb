@@ -15,7 +15,7 @@
   <tbody>
     <% @links.each do |link| %>
       <tr>
-        <td><%= link.in_url %></td>
+        <td><%= link_to "#{link.in_url}", link.in_url %></td>
         <td><%= link.out_url %></td>
         <td><%= link.http_status %></td>
         <td><%= link_to 'Show', link %></td>
